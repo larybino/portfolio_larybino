@@ -72,6 +72,7 @@ p, span, li {
 p {
   text-align: justify;
 }
+/* header */
 
 .header {
   display: flex;
@@ -133,48 +134,7 @@ p {
   gap: 1rem;
 }
 
-.description__buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start; 
-  }
-  
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  width: 100%;
-  background: transparent;
-  border-radius: 3.125rem;
-  border: none;
-  padding: 0.875rem 1.5rem;
-  transition: ease-in-out .3s;
-  cursor: pointer;
-  color: #F0F0F0;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  transition: ease-in-out .3s;
-}
-
-.btn span, .btn i {
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  display: flex;
-  gap: 1rem;
-}
-
-.btn--primary span {
-  color: #F0F0F0;
-}
-
-.btn--primary {
-  border: 1px solid #F0F0F0;
-}
-
-
+/* sobre */  
 .about {
   padding: 2.5rem 1rem;
   display: flex;
@@ -216,6 +176,129 @@ p {
   font-size: 1.25rem;
 }
 
+/* */
+
+.description__buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start; 
+}
+
+.btn {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+width: 100%;
+background: transparent;
+border-radius: 3.125rem;
+border: none;
+padding: 0.875rem 1.5rem;
+transition: ease-in-out .3s;
+cursor: pointer;
+color: #F0F0F0;
+}
+
+.btn:hover {
+transform: scale(1.05);
+transition: ease-in-out .3s;
+}
+
+.btn span, .btn i {
+font-size: 1.25rem;
+text-transform: uppercase;
+display: flex;
+gap: 1rem;
+}
+
+.btn--primary span {
+color: #F0F0F0;
+}
+
+.btn--primary {
+border: 1px solid #F0F0F0;
+}
+
+/* projetos */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__cover {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card__description {
+  color: var(--title-color);
+}
+
+.card__list {
+  margin-left: 1.25rem
+}
+
+.card__item {
+  list-style: disc;
+}
+
+.card__buttons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card__buttons .btn {
+  padding: .65rem 1.25rem;
+}
+
+.card__buttons .btn span {
+    font-size: 1rem;
+}
+
+.card__body .technologies__list {
+  gap: .75rem;
+}
+
+.card__body .technologies__item {
+  width: 4rem;
+  height: 4rem;
+}
+
+.card__body .technologies__logo {
+  height: 2rem;
+}
+
+.projects .btn {
+  width: auto;
+  margin: auto;
+}
+
+/* footer*/ 
 
 footer {
   margin-bottom: 5rem;
@@ -253,7 +336,7 @@ footer p {
     font-size: 3rem;
   }
 
-  .about {
+  .about, .projects {
     padding: 8rem 6rem 4rem 6rem;
   }
 
@@ -263,6 +346,18 @@ footer p {
 }
 
 @media (min-width: 992px) {
+  .projects__card {
+    flex-direction: row;
+  }
+
+  .projects__card.card--reverse {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .card__cover {
+    width: 55%;
+  }
 
   .about {
     gap: 5rem;
@@ -303,6 +398,10 @@ footer p {
     font-size: 1.15rem;
   }
 
+  .card__buttons .btn,
+  .description__buttons .btn {
+    width: auto;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -322,7 +421,7 @@ footer p {
     padding: 1rem 15rem;
   }
 
-  .about {
+  .about, .projects {
     padding: 10rem 15rem 4rem;
   }
 
