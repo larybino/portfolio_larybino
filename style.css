@@ -730,3 +730,31 @@ footer p {
   }
 
 }
+
+@media (max-width: 767px) { 
+  .educacao {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .educacao-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1rem;
+  }
+
+  .educacao-item {
+    width: 90%;
+    max-width: 400px; 
+    padding: 1rem;
+  }
+
+  .educacao-item h4 {
+    font-size: 1.2rem;
+  }
+
+  .educacao-item p {
+    font-size: 1rem;
+  }
+}
