@@ -11,6 +11,11 @@
   scrollbar-color: #28292E transparent;
 }
 
+html body{
+  min-height: 100%;
+  margin: 0;
+}
+
 body {
   background: #111217;
   font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
@@ -105,7 +110,7 @@ p {
   position: fixed;
   bottom: 0;
   justify-content: space-between;
-  border-top: 1px solid var#28292E;
+  border-top: 1px solid #28292E;
 }
 
 .menu--mobile .menu__link {
@@ -233,6 +238,7 @@ border: 1px solid #F0F0F0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  min-height: 93vh;
 }
 
 .projects__container {
@@ -354,6 +360,7 @@ border: 1px solid #F0F0F0;
   text-align: justify;
   gap: 2rem;
   padding: 2rem;
+  min-height: 59.5vh;
 }
 .accordion__header {
   width: 100%;
@@ -406,13 +413,6 @@ border: 1px solid #F0F0F0;
   transform: rotate(180deg);
 }
 
-/*experiencias e educacao*/
-.experiencia_educacao {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 5.5rem 1rem;
-}
 
 /*contato*/
 .contact {
@@ -421,6 +421,7 @@ border: 1px solid #F0F0F0;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  min-height: 93vh;
 }
 
 .contact p {
@@ -465,20 +466,74 @@ textarea {
 .menu--social {
   gap: 1rem;
 }
+
+.versiculo {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+}
+
+.educacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 10rem;  
+  flex-grow: 1;
+  min-height: 93vh;
+}
+.educacao-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.educacao-item {
+  padding: 15px;
+  width: 30%;
+  height: 10%;
+  text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  min-height: 57.5vh;
+  border: #555 1px solid;
+}
+
+.educacao-item h4{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.educacao-item p{
+  margin-bottom: 20px;
+}
+
+
 /* footer*/ 
 
 footer {
-  margin-bottom: 5rem;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
 }
 
 footer p {
   font-size: .875rem;
   text-align: center;
-  padding: 1rem;
+  
 }
 
 /* Responsividade */
-@media (min-width: 768px) {
+
+
+@media (min-width: 1400px) {
   .header {
     position: fixed;
     border-bottom: 1px solid #28292E;
@@ -513,7 +568,6 @@ footer p {
   .projects{
     padding: 5rem 6rem 4rem 6rem;
   }
-
   .contact {
     padding: 6rem;
   }
@@ -529,13 +583,16 @@ footer p {
     padding: 6.25rem 6rem 2rem 6rem;
     margin-top: -6rem;
   }
-
+  .educacao h2{
+    margin-top: 50px;
+  }
   footer {
     margin: 0;
   }
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .projects{
     padding: 5rem 6rem 4rem 6rem;
   }
@@ -572,9 +629,15 @@ footer p {
   .description__buttons {
     justify-content: flex-start;
   }
+  .educacao h2{
+    margin-top: 50px;
+  }
+  .educacao-container {
+    flex-wrap: nowrap;
+  }	
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
 
   h2 {
     font-size: 4rem;
@@ -625,9 +688,11 @@ footer p {
   .description__buttons .btn {
     width: auto;
   }
+
+  
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 480px) {
   h1 {
     font-size: 6.25rem;
   }
@@ -646,6 +711,22 @@ footer p {
 
   .technologies .about {
     padding: 10rem 15rem 4rem;
+  }
+
+  .educacao {
+    padding: 2rem; 
+  }
+
+  .educacao-item {
+    width: 100%; 
+  }
+
+  .educacao-item h4 {
+    font-size: 1.2rem;
+  }
+
+  .educacao-item p {
+    font-size: 1rem; 
   }
 
 }
