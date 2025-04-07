@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <nav class="header__nav">
-      <ul class="menu menu--principal">
+      <ul class="menu menu--main">
         <li class="menu__item">
           <a class="menu__link" href="index.html">
             <span class="menu__text">Home</span>
@@ -43,38 +43,42 @@
         </li>
       </ul>
     </nav>
+    <div class="header__toggle" id="toggleTheme" aria-label="Alternar tema">
+      <img id="iconSun" src="img/icons/sun-svgrepo-com.svg" alt="Ícone de Sol" width="24" height="24" />
+      <img id="iconMoon" src="img/icons/moon-svgrepo-com.svg" alt="Ícone de Lua" width="24" height="24" style="display: none;" />
+    </div>
   </header>
 
   <nav class="nav--mobile">
     <ul class="menu menu--mobile">
       <li class="menu__item">
-        <a class="menu__link" href="index.html">
-          <i class="menu__icon bi bi-person"></i>
+        <a class="menu__link active" href="index.html">
+          <img class="menu__icon" src="img/icons/person-svgrepo-com.svg" alt="Ícone de pessoa" width="24" height="24" />
         </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="projetos.html">
-          <i class="menu__icon bi bi-window-stack"></i>
+          <img class="menu__icon" src="img/icons/projects-svgrepo-com.svg" alt="Ícone de pessoa" width="24" height="24" />
         </a>
       </li>
       <li class="menu__item">
-        <a class="menu__link active" href="habilidades.html">
-          <i class="menu__icon bi bi-tools"></i>
+        <a class="menu__link" href="habilidades.html">
+          <img class="menu__icon" src="img/icons/tools-svgrepo-com.svg" alt="Ícone de pessoa" width="24" height="24" />
         </a>
       </li>
       <li class="menu__item">
-          <a class="menu__link" href="experiencia.html">
-            <i class="menu__icon bi bi-person-workspace"></i>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="educacao.html">
-            <i class="menu__icon bi bi-mortarboard"></i>
-          </a>
-        </li>
+        <a class="menu__link" href="experiencia.html">
+          <img class="menu__icon" src="img/icons/workspace-svgrepo-com.svg" alt="Ícone de pessoa" width="24" height="24" />
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="educacao.html">
+          <img class="menu__icon" src="img/icons/mortarboard-svgrepo-com.svg" alt="Ícone de pessoa" width="24" height="24" />
+        </a>
+      </li>
       <li class="menu__item">
         <a class="menu__link" href="contato.html">
-          <i class="menu__icon bi bi-envelope"></i>
+          <img class="menu__icon" src="img/icons/envelope-letter-svgrepo-com.svg" alt="Ícone de pessoa" width="24" height="24" />
         </a>
       </li>
     </ul>
@@ -102,7 +106,7 @@
         </ul>
     </section>
 
-    <section class="certificados">
+    <section class="certificates">
         <h2>Certificados</h2>
       <div id="accordion">
         <div class="accordion__item active">
