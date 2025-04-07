@@ -30,10 +30,6 @@
 	--icon-color: #56575A;
 }
 
-html[data-theme='light'] .header__toggle {
-  filter: invert(1);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +50,6 @@ body {
   font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
 }
-
 
 a {
   text-decoration: none;
@@ -166,14 +161,12 @@ p {
   padding: 0.5rem 1rem;
 }
 
-.menu__link.active .menu__icon, 
-.menu__link.active .menu__text,
-.menu__link:hover .menu__icon, 
+.menu__link.active .menu__text, 
 .menu__link:hover .menu__text {
   color: var(--primary-color);
 }
 
-.menu__icon, .menu__text {
+.menu__text {
   color: var(--text-color);
 }
 
@@ -594,11 +587,6 @@ footer p {
 
   .header__nav {
     display: flex;
-  }
-
-  .header__nav,
-  .header__toggle{
-    min-width: 30%;
   }
 
   h1 {
