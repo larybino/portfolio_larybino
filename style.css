@@ -124,7 +124,21 @@ p {
   z-index: 10;
 }
 
+.header__language {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  z-index: 10;
+}
+
 #toggleTheme {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: ease-in-out .4s;
+}
+
+#toggleLanguage{
   font-size: 1.5rem;
   color: var(--primary-color);
   cursor: pointer;
@@ -278,6 +292,7 @@ border: 1px solid var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 3.5rem 1rem;
   min-height: 93vh;
 }
 
@@ -361,7 +376,7 @@ border: 1px solid var(--primary-color);
   gap: 2.25rem;
   padding: 6.25rem 1rem 2rem;
   background: var(--secondary-bg-color);
-  margin-top: -5.5rem;
+  margin-top: -3.5rem;
 }
 
 .technologies h2 {
@@ -461,8 +476,8 @@ border: 1px solid var(--primary-color);
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  min-height: 93vh;
-}
+  padding: 3rem 1rem;
+  }
 
 .contact p {
   text-align: center;
@@ -561,7 +576,7 @@ textarea {
 footer {
   text-align: center;
   padding: 1rem;
-  margin-top: auto;
+  align-self: flex-end;
 }
 
 footer p {
@@ -622,10 +637,10 @@ footer p {
   .education h2{
     margin-top: 50px;
   }
+
   footer {
     margin: 0;
   }
-
 }
 
 @media (min-width: 1200px) {
