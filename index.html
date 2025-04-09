@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfólio Laryssa Bino</title>
+    <title data-i18n="tab">Portfólio Laryssa Bino</title>
   </head>
   <body data-theme="dark">
     <header class="header">
@@ -21,31 +21,34 @@
           </li>
           <li class="menu__item">
             <a class="menu__link" href="projetos.html">
-              <span class="menu__text">Projetos</span>
+              <span class="menu__text" data-i18n="projects">Projetos</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="habilidades.html">
-              <span class="menu__text">Habilidades</span>
+              <span class="menu__text" data-i18n="habilities">Habilidades</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="experiencia.html">
-              <span class="menu__text">Experiência</span>
+              <span class="menu__text" data-i18n="experience">Experiência</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="educacao.html">
-              <span class="menu__text">Educação</span>
+              <span class="menu__text" data-i18n="education">Educação</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contato.html">
-              <span class="menu__text">Contato</span>
+              <span class="menu__text" data-i18n="contact">Contato</span>
             </a>
           </li>
         </ul>
       </nav>
+      <div class="header__language">
+        <i id="toggleLanguage" class="bi bi-translate"></i>
+      </div>
       <div class="header__toggle">
         <i id="toggleTheme" class="bi bi-sun"></i>
       </div>
@@ -65,15 +68,18 @@
         </li>
         <li class="menu__item">
           <a class="menu__link" href="habilidades.html">
-            <i class="menu__icon bi bi-tools"></i>          </a>
+            <i class="menu__icon bi bi-tools"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="experiencia.html">
-            <i class="menu__icon bi bi-briefcase"></i>          </a>
+            <i class="menu__icon bi bi-briefcase"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="educacao.html">
-            <i class="menu__icon bi bi-mortarboard"></i>          </a>
+            <i class="menu__icon bi bi-mortarboard"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="contato.html">
@@ -87,12 +93,12 @@
       <div class="about__content">
         <img class="about__photo" src="img/foto.jpg" alt="" />
         <div class="about__description">
-          <h2>Sobre mim</h2>
-          <p>Laryssa Labriola Menino Rayes Bino.</p>
-          <p>
+          <h2 data-i18n="title-about">Sobre mim</h2>
+          <p data-i18n="name-about">Laryssa Labriola Menino Rayes Bino.</p>
+          <p data-i18n="localization-about">
             Paranavaí-PR | Salvador-BA, Estudante de Engenharia de Software.
           </p>
-          <p>
+          <p data-i18n="description-about">
             Sou estudante de Engenharia se Software no IFPR, com conhecimento
             intermediário/avançado em Java voltado para área de BackEnd, e
             estudando linguagens como JavaScript e Node.js voltados para Full
@@ -103,7 +109,7 @@
           <div class="description__buttons">
             <a href="https://www.linkedin.com/in/laryssabino/" target="_blank">
               <button class="btn btn--primary">
-                <span>Conecte-se Comigo</span>
+                <span data-i18n="conect-about">Conecte-se Comigo</span>
                 <i class="bi bi-arrow-up-right"></i>
               </button>
             </a>
@@ -118,7 +124,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer data-i18n="footer">
       <p>© 2025. Portfólio desenvolvido para fins educativos</p>
     </footer>
 

@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+    <title data-i18n="tab">Portfólio Laryssa Bino</title></head>
 <body>
   <header class="header">
     <nav class="header__nav">
       <ul class="menu menu--main">
         <li class="menu__item">
-          <a class="menu__link" href="index.html">
+          <a class="menu__link active" href="index.html">
             <span class="menu__text">Home</span>
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="projetos.html">
-            <span class="menu__text">Projetos</span>
+            <span class="menu__text" data-i18n="projects">Projetos</span>
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link active" href="habilidades.html">
-            <span class="menu__text">Habilidades</span>
+          <a class="menu__link" href="habilidades.html">
+            <span class="menu__text" data-i18n="habilities">Habilidades</span>
           </a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="experiencia.html">
-              <span class="menu__text">Experiência</span>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="educacao.html">
-              <span class="menu__text">Educação</span>
-            </a>
-          </li>
+          <a class="menu__link" href="experiencia.html">
+            <span class="menu__text" data-i18n="experience">Experiência</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="educacao.html">
+            <span class="menu__text" data-i18n="education">Educação</span>
+          </a>
+        </li>
         <li class="menu__item">
           <a class="menu__link" href="contato.html">
-            <span class="menu__text">Contato</span>
+            <span class="menu__text" data-i18n="contact">Contato</span>
           </a>
         </li>
       </ul>
     </nav>
-    
+    <div class="header__language">
+      <i id="toggleLanguage" class="bi bi-translate"></i>
+    </div>
     <div class="header__toggle">
       <i id="toggleTheme" class="bi bi-sun"></i>
     </div>
@@ -68,8 +69,8 @@
       </li>
       <li class="menu__item">
         <a class="menu__link" href="experiencia.html">
-          <i class="menu__icon bi bi-briefcase"></i>         
-         </a>
+          <i class="menu__icon bi bi-briefcase"></i>          
+        </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="educacao.html">
@@ -86,7 +87,7 @@
 
 
   <section class="technologies">
-        <h2>Conhecimento nas tecnologias</h2>
+        <h2 data-i18n="title-technologies">Conhecimento nas tecnologias</h2>
         <ul class="technologies__list">
           <li class="technologies__item">
             <img class="technologies__logo" src="img/icons/java.svg" alt="Logo Java">
@@ -107,57 +108,55 @@
     </section>
 
     <section class="certificates">
-        <h2>Certificados</h2>
+        <h2 data-i18n="title-certificates">Certificados</h2>
       <div id="accordion">
         <div class="accordion__item active">
           <button class="accordion__header start">
-            <span>Python Data Analytics</span>
+            <span data-i18n="certificate-1">Python Data Analytics</span>
             <i class="bi bi-caret-down-fill"></i>
           </button>
           <div class="accordion__body">
-            <p>
+            <p data-i18n="certificate-date-1">
               Digital Innovation One. Abr 2023. 68h.
             </p>
-            <p>
+            <p data-i18n="certificate-description-1">
               Aprendendo o processo de instalação, conceitos de funções Python e os seus principais comandos, dando os primeiros passos em noções importantes de base de dados relacionais e não relacionais (SQL e noSQL) e aprendendo a integrar esse conhecimento ao Power BI
             </p>
           </div>
         </div>
         <div class="accordion__item">
           <button class="accordion__header">
-            <span>Santander2024 - Backend Java</span>
+            <span data-i18n="certificate-2">Santander2024 - Backend Java</span>
             <i class="bi bi-caret-down-fill"></i>
           </button>
           <div class="accordion__body">
-            <p>
+            <p data-i18n="certificate-date-2">
               Digital Innovation One. Maio 2024. 87h.
             </p>
-            <p>
+            <p data-i18n="certificate-description-2">
               Este curso abrange desde os fundamentos da linguagem Java até a implementação de APIs com Spring Framework, incluindo programação orientada a objetos, testes, gerenciamento de dependências e integração com bancos de dados SQL e NoSQL. Além disso, desenvolve habilidades colaborativas e soft skills essenciais para o ambiente ágil
             </p>
           </div>
         </div>
         <div class="accordion__item">
           <button class="accordion__header end">
-            <span>Potência Tech iFood - Programação do Zero</span>
+            <span data-i18n="certificate-3">Potência Tech iFood - Programação do Zero</span>
             <i class="bi bi-caret-down-fill"></i>
           </button>
           <div class="accordion__body end">
-            <p>
+            <p data-i18n="certificate-date-3">
               Digital Innovation One. Out 2023. 68h.
             </p>
-            <p>
+            <p data-i18n="certificate-description-3">
               Iniciando com os princípios da lógica de programação, começando por conceitos introdutórios, desde a exploração de algoritmos, variáveis e estruturas condicionais até a implementação de estruturas de repetição e operadores lógicos e de comparação.
             </p>
           </div>
         </div>
       </section>
       
-        <footer>
-            <p>
-              © 2025. Portfólio desenvolvido para fins educativos 
-            </p>
-        </footer>
+      <footer data-i18n="footer">
+        <p>© 2025. Portfólio desenvolvido para fins educativos</p>
+      </footer>
 
         <script src="./script.js"></script>
 </body>

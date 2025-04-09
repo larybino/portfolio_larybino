@@ -8,44 +8,46 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
+    <title data-i18n="tab">Portfólio Laryssa Bino</title>  </head>
   <body>
     <header class="header">
       <nav class="header__nav">
         <ul class="menu menu--main">
           <li class="menu__item">
-            <a class="menu__link" href="index.html">
+            <a class="menu__link active" href="index.html">
               <span class="menu__text">Home</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="projetos.html">
-              <span class="menu__text">Projetos</span>
+              <span class="menu__text" data-i18n="projects">Projetos</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="habilidades.html">
-              <span class="menu__text">Habilidades</span>
+              <span class="menu__text" data-i18n="habilities">Habilidades</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="experiencia.html">
-              <span class="menu__text">Experiência</span>
+              <span class="menu__text" data-i18n="experience">Experiência</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" href="educacao.html">
-              <span class="menu__text">Educação</span>
+            <a class="menu__link" href="educacao.html">
+              <span class="menu__text" data-i18n="education">Educação</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contato.html">
-              <span class="menu__text">Contato</span>
+              <span class="menu__text" data-i18n="contact">Contato</span>
             </a>
           </li>
         </ul>
       </nav>
+      <div class="header__language">
+        <i id="toggleLanguage" class="bi bi-translate"></i>
+      </div>
       <div class="header__toggle">
         <i id="toggleTheme" class="bi bi-sun"></i>
       </div>
@@ -65,15 +67,18 @@
         </li>
         <li class="menu__item">
           <a class="menu__link" href="habilidades.html">
-            <i class="menu__icon bi bi-tools"></i>          </a>
+            <i class="menu__icon bi bi-tools"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="experiencia.html">
-            <i class="menu__icon bi bi-briefcase"></i>          </a>
+            <i class="menu__icon bi bi-briefcase"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="educacao.html">
-            <i class="menu__icon bi bi-mortarboard"></i>          </a>
+            <i class="menu__icon bi bi-mortarboard"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="contato.html">
@@ -84,35 +89,35 @@
     </nav>
 
     <section class="education">
-      <h2>Educação</h2>
+      <h2 data-i18n="title-education">Educação</h2>
       <div class="education-container">
         <div class="education-item">
-          <h4>Bacharelado em Engenharia de Software</h4>
-          <p>Jan 2023 - Atualmente</p>
+          <h4 data-i18n="title-education-1">Bacharelado em Engenharia de Software</h4>
+          <p data-i18n="education-date-1">Jan 2023 - Atualmente</p>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
-            <span>Instituto Federal do Paraná</span>
+            <span data-i18n="education-local-1">Instituto Federal do Paraná</span>
           </div>
         </div>
         <div class="education-item">
-          <h4>Conclusão do curso de Matemática</h4>
-          <p>Jan 2012 - Nov 2020</p>
+          <h4 data-i18n="title-education-2">Conclusão do curso de Matemática</h4>
+          <p data-i18n="education-date-2">Jan 2012 - Nov 2020</p>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
-            <span>Kumon</span>
+            <span data-i18n="education-local-2">Kumon</span>
           </div>
         </div>
         <div class="education-item">
-          <h4>Conclusão do curso de Inglês</h4>
-          <p>Jan 2021 - Out 2021 | Fev 2024</p>
+          <h4 data-i18n="title-education-3">Conclusão do curso de Inglês</h4>
+          <p data-i18n="education-date-3">Jan 2021 - Out 2021 | Fev 2024</p>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
-            <span>Kumon | Beway Idiomas</span>
+            <span data-i18n="education-local-3">Kumon | Beway Idiomas</span>
           </div>
         </div>
       </div>
     </section>
-    <footer>
+    <footer data-i18n="footer">
       <p>© 2025. Portfólio desenvolvido para fins educativos</p>
     </footer>
 

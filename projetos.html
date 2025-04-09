@@ -5,44 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio Laryssa Bino</title>
-</head>
+    <title data-i18n="tab">Portfólio Laryssa Bino</title></head>
 <body >
   <header class="header">
     <nav class="header__nav">
       <ul class="menu menu--main">
         <li class="menu__item">
-          <a class="menu__link" href="index.html">
+          <a class="menu__link active" href="index.html">
             <span class="menu__text">Home</span>
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link active" href="projetos.html">
-            <span class="menu__text">Projetos</span>
+          <a class="menu__link" href="projetos.html">
+            <span class="menu__text" data-i18n="projects">Projetos</span>
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="habilidades.html">
-            <span class="menu__text">Habilidades</span>
+            <span class="menu__text" data-i18n="habilities">Habilidades</span>
           </a>
         </li>
         <li class="menu__item">
-            <a class="menu__link" href="experiencia.html">
-              <span class="menu__text">Experiência</span>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="educacao.html">
-              <span class="menu__text">Educação</span>
-            </a>
-          </li>
+          <a class="menu__link" href="experiencia.html">
+            <span class="menu__text" data-i18n="experience">Experiência</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="educacao.html">
+            <span class="menu__text" data-i18n="education">Educação</span>
+          </a>
+        </li>
         <li class="menu__item">
           <a class="menu__link" href="contato.html">
-            <span class="menu__text">Contato</span>
+            <span class="menu__text" data-i18n="contact">Contato</span>
           </a>
         </li>
       </ul>
     </nav>
+    <div class="header__language">
+      <i id="toggleLanguage" class="bi bi-translate"></i>
+    </div>
     <div class="header__toggle">
       <i id="toggleTheme" class="bi bi-sun"></i>
     </div>
@@ -62,15 +64,18 @@
       </li>
       <li class="menu__item">
         <a class="menu__link" href="habilidades.html">
-          <i class="menu__icon bi bi-tools"></i>          </a>
+          <i class="menu__icon bi bi-tools"></i>          
+        </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="experiencia.html">
-          <i class="menu__icon bi bi-briefcase"></i>          </a>
+          <i class="menu__icon bi bi-briefcase"></i>          
+        </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="educacao.html">
-          <i class="menu__icon bi bi-mortarboard"></i>          </a>
+          <i class="menu__icon bi bi-mortarboard"></i>          
+        </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="contato.html">
@@ -82,13 +87,13 @@
 
   
   <section class="projects">
-    <h2>Projetos</h2>
+    <h2 data-i18n="title-projects">Projetos</h2>
     <div class="projects__container">
       <div class="projects__card">
         <img class="card__cover" src="img/javaComp (1).png" alt="foto">
         <div class="card__body">
-          <h3 class="card__title">Algoritmos-Recursividade-Merge</h3>
-          <p class="card__description">Algoritmos II</p>
+          <h3 class="card__title" data-i18n="card-projects-1">Algoritmos-Recursividade-Merge</h3>
+          <p class="card__description" data-i18n="card-projects-description-1">Algoritmos II</p>
           <ul class="card__list">
             <li class="card__item">Insertion Sort;</li>
             <li class="card__item">Selection Sort;</li>
@@ -104,13 +109,13 @@
           <div class="card__buttons">
             <a href="https://github.com/larybino/Algoritmos-Recursividade-Merge/blob/main/README.md" target="_blank">
               <button class="btn btn--primary">
-                <span>Prévia</span>
+                <span data-i18n="preview">Prévia</span>
                 <i class="bi bi-arrow-up-right"></i>
               </button>
             </a>
             <a href="https://github.com/larybino/Algoritmos-Recursividade-Merge.git" target="_blank">
               <button class="btn">
-                <span>Repositório</span>
+                <span data-i18n="repositories">Repositório</span>
               </button> 
             </a>
           </div>
@@ -119,10 +124,10 @@
       <div class="projects__card card--reverse">
         <img class="card__cover" src="img/kotlin-vs-java.jpg" alt="foto">
         <div class="card__body">
-          <h3 class="card__title">Gerenciamento de conta bancária</h3>
-          <p class="card__description">Programação Orientada a Objetos.</p>
+          <h3 class="card__title" data-i18n="card-projects-2">Gerenciamento de conta bancária</h3>
+          <p class="card__description" data-i18n="card-projects-description-2">Programação Orientada a Objetos.</p>
           <ul class="card__list">
-            <li class="card__item">Persistência de Dados;</li>
+            <li class="card__item" data-i18n="card-projects-item">Persistência de Dados;</li>
             <li class="card__item">DAO;</li>
             <li class="card__item">Hibernate.</li>
           </ul>
@@ -134,13 +139,13 @@
           <div class="card__buttons">
             <a href="https://github.com/larybino/ContaBancoPOO/blob/main/README.MD" target="_blank">
               <button class="btn btn--primary">
-                <span>Prévia</span>
+                <span data-i18n="preview">Prévia</span>
                 <i class="bi bi-arrow-up-right"></i>
               </button>
             </a> 
             <a href="https://github.com/larybino/ContaPoo.git" target="_blank">
               <button class="btn">
-                <span>Repositório</span>
+                <span data-i18n="repositories">Repositório</span>
               </button> 
             </a> 
           </div>
@@ -149,12 +154,12 @@
       <div class="projects__card">
         <img class="card__cover" src="img/math.png" alt="foto">
         <div class="card__body">
-          <h3 class="card__title">Cálculos Estatísticos com Notas de Alunos</h3>
-          <p class="card__description">Algoritmos II.</p>
+          <h3 class="card__title" data-i18n="card-projects-3">Cálculos Estatísticos com Notas de Alunos</h3>
+          <p class="card__description" data-i18n="card-projects-description-3">Algoritmos II.</p>
           <ul class="card__list">
-            <li class="card__item">Cálculo de Estatísticas por Disciplina/Ano;</li>
-            <li class="card__item">Cálculo de Estatísticas por Disciplina;</li>
-            <li class="card__item">Criação de Arquivos de Saída.</li>
+            <li class="card__item" data-i18n="card-projects-item-1">Cálculo de Estatísticas por Disciplina/Ano;</li>
+            <li class="card__item" data-i18n="card-projects-item-2">Cálculo de Estatísticas por Disciplina;</li>
+            <li class="card__item" data-i18n="card-projects-item-3">Criação de Arquivos de Saída.</li>
           </ul>
           <ul class="technologies__list">
             <li class="technologies__item">
@@ -164,13 +169,13 @@
           <div class="card__buttons">
             <a href="https://github.com/larybino/Desafio-Algoritmos/blob/main/README.MD" target="_blank">
               <button class="btn btn--primary">
-                <span>Prévia</span>
+                <span data-i18n="preview">Prévia</span>
                 <i class="bi bi-arrow-up-right"></i>
               </button>
             </a>
             <a href="https://github.com/larybino/Desafio-Algoritmos.git" target="_blank">
               <button class="btn">
-                <span>Repositório</span>
+                <span data-i18n="repositories">Repositório</span>
               </button> 
             </a>
           </div>
@@ -178,17 +183,15 @@
       </div>
       <a href="https://github.com/larybino?tab=repositories" target="_blank">
         <button class="btn btn--primary">
-          <span>Ver Todos os Projetos</span>
+          <span data-i18n="all-repositories">Ver Todos os Projetos</span>
           <i class="bi bi-arrow-up-right"></i>
         </button>  
       </a>
     </div>
   </section>
-    <footer>
-        <p>
-          © 2025. Portfólio desenvolvido para fins educativos 
-        </p>
-    </footer>
+  <footer data-i18n="footer">
+    <p>© 2025. Portfólio desenvolvido para fins educativos</p>
+  </footer>
     <script src="./script.js"></script>
 </body>
 </html>

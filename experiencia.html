@@ -8,44 +8,46 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
+    <title data-i18n="tab">Portfólio Laryssa Bino</title>  </head>
   <body>
     <header class="header">
       <nav class="header__nav">
         <ul class="menu menu--main">
           <li class="menu__item">
-            <a class="menu__link" href="index.html">
+            <a class="menu__link active" href="index.html">
               <span class="menu__text">Home</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="projetos.html">
-              <span class="menu__text">Projetos</span>
+              <span class="menu__text" data-i18n="projects">Projetos</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="habilidades.html">
-              <span class="menu__text">Habilidades</span>
+              <span class="menu__text" data-i18n="habilities">Habilidades</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" href="experiencia.html">
-              <span class="menu__text">Experiência</span>
+            <a class="menu__link" href="experiencia.html">
+              <span class="menu__text" data-i18n="experience">Experiência</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="educacao.html">
-              <span class="menu__text">Educação</span>
+              <span class="menu__text" data-i18n="education">Educação</span>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contato.html">
-              <span class="menu__text">Contato</span>
+              <span class="menu__text" data-i18n="contact">Contato</span>
             </a>
           </li>
         </ul>
       </nav>
+      <div class="header__language">
+        <i id="toggleLanguage" class="bi bi-translate"></i>
+      </div>
       <div class="header__toggle">
         <i id="toggleTheme" class="bi bi-sun"></i>
       </div>
@@ -65,15 +67,18 @@
         </li>
         <li class="menu__item">
           <a class="menu__link" href="habilidades.html">
-            <i class="menu__icon bi bi-tools"></i>          </a>
+            <i class="menu__icon bi bi-tools"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="experiencia.html">
-            <i class="menu__icon bi bi-briefcase"></i>          </a>
+            <i class="menu__icon bi bi-briefcase"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="educacao.html">
-            <i class="menu__icon bi bi-mortarboard"></i>          </a>
+            <i class="menu__icon bi bi-mortarboard"></i>          
+          </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="contato.html">
@@ -84,36 +89,36 @@
     </nav>
 
     <section class="projects">
-      <h2>Experiências</h2>
-      <h4>Projeto de Ensino: Git e GitHub</h4>
-      <span>Instituto Federal do Paraná (IFPR) - Campus Paranavaí</span>
-      <span>10/2024–12/2024</span>
-      <span
+      <h2 data-i18n="title-experience">Experiências</h2>
+      <h4 data-i18n="title-experience-project">Projeto de Ensino: Git e GitHub</h4>
+      <span data-i18n="title-experience-local">Instituto Federal do Paraná (IFPR) - Campus Paranavaí</span>
+      <span data-i18n="title-experience-date">10/2024–12/2024</span>
+      <span data-i18n="title-experience-project-description">
         >Produção de conteúdos educacionais direcionados a alunos iniciantes que
         desejam construir uma base no Versionamento de Código.
       </span>
       <ul class="about__list">
-        <li class="about__item">
+        <li class="about__item" data-i18n="title-experience-project-item-1"> 
           Organizar e ministrar um minicurso para introduzir controle de versão
           utilizando Git e GitHub;
         </li>
-        <li class="about__item">
+        <li class="about__item" data-i18n="title-experience-project-item-2">
           Ensinar a criação e o gerenciamento de repositórios locais e remotos,
           branches e a resolução de conflitos de merge;
         </li>
-        <li class="about__item">
+        <li class="about__item" data-i18n="title-experience-project-item-3">
           Desenvolver atividades práticas com foco em boas práticas de
           versionamento, colaborando com colegas no uso de ferramentas como
           GitHub e VS Code;
         </li>
-        <li class="about__item">
+        <li class="about__item" data-i18n="title-experience-project-item-4">
           Capacitar os participantes a gerenciar projetos colaborativos com Git,
           realizando merges e solucionando conflitos de forma eficiente.
         </li>
       </ul>
     </section>
 
-    <footer>
+    <footer data-i18n="footer">
       <p>© 2025. Portfólio desenvolvido para fins educativos</p>
     </footer>
 
