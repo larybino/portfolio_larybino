@@ -3,49 +3,49 @@ const toggleLanguage = document.getElementById("toggleLanguage");
 const accordionHeaders = document.querySelectorAll(".accordion__header");
 const menuLinks = document.querySelectorAll(".menu__link");
 
-let idiomaAtual = localStorage.getItem("idioma") || "pt";
-carregarIdioma(idiomaAtual);
+let languageCurrent = localStorage.getItem("language") || "pt";
+loadLanguage(languageCurrent);
 
-function alterarIdioma() {
-    idiomaAtual= idiomaAtual == "pt" ? "en" : "pt";
-    localStorage.setItem("idioma", idiomaAtual);
-    carregarIdioma(idiomaAtual);
+function changeLanguage() {
+    languageCurrent= languageCurrent == "pt" ? "en" : "pt";
+    localStorage.setItem("language", languageCurrent);
+    loadLanguage(languageCurrent);
 }
 
-toggleLanguage.addEventListener("click", alterarIdioma);
+toggleLanguage.addEventListener("click", changeLanguage);
 
-function carregarIdioma(idioma) {
-    fetch(`json/${idioma}.json`)
+function loadLanguage(language) {
+    fetch(`json/${language}.json`)
     .then(data=> data.json())
-    .then(data=> traduzirPagina(data))
+    .then(data=> translatePage(data))
 
 }
 
-function traduzirPagina(linguagem) {
-    document.querySelectorAll("[data-i18n]").forEach((elemento) => {
-        console.log(elemento);
-        const chave = elemento.getAttribute("data-i18n");
-        console.log(chave);
-        if(linguagem[chave]){
-            elemento.textContent = linguagem[chave];
+function translatePage(language) {
+    document.querySelectorAll("[data-i18n]").forEach((e) => {
+        console.log(e);
+        const key = e.getAttribute("data-i18n");
+        console.log(key);
+        if(language[key]){
+            e.textContent = language[key];
 
         }
     });
 
-    document.querySelectorAll("[data-i18n-alt]").forEach((elemento) => {
-        console.log(elemento);
-        const chave = elemento.getAttribute("data-i18n-alt");
-        if(linguagem[chave]){
-            elemento.setAttribute("alt", linguagem[chave]);
+    document.querySelectorAll("[data-i18n-alt]").forEach((e) => {
+        console.log(e);
+        const key = e.getAttribute("data-i18n-alt");
+        if(language[key]){
+            e.setAttribute("alt", language[key]);
         }
     });
 }
 
 function changeTheme(){
-  const tema = document.body.getAttribute("data-theme");
-  const novoTema = tema == 'dark' ? 'light' : 'dark';
-  localStorage.setItem("tema", novoTema);
-  document.body.setAttribute("data-theme", novoTema);
+  const theme = document.body.getAttribute("data-theme");
+  const newTheme = theme == 'dark' ? 'light' : 'dark';
+  localStorage.setItem("theme", newTheme);
+  document.body.setAttribute("data-theme", newTheme);
   const toggleTheme=document.getElementById("toggleTheme");
   toggleTheme.classList.toggle("bi-sun")
   toggleTheme.classList.toggle("bi-moon-stars")
@@ -54,10 +54,10 @@ function changeTheme(){
 toggleTheme.addEventListener("click", changeTheme);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const temaSalvo = localStorage.getItem("tema") || "dark";
-  document.body.setAttribute("data-theme", temaSalvo);
+  const saveTheme = localStorage.getItem("theme") || "dark";
+  document.body.setAttribute("data-theme", saveTheme);
   const toggleTheme = document.getElementById("toggleTheme");
-  if (temaSalvo === "light") {
+  if (saveTheme === "light") {
     toggleTheme.classList.add("bi-sun");
     toggleTheme.classList.remove("bi-moon-stars");
   } else {
@@ -82,7 +82,7 @@ menuLinks.forEach(item => {
   })
 })
 
-async function buscarVersiculo() {
+async function searchVerse() {
   try {
       const response = await fetch("https://bible-api.com/?random=verse");
       const data = await response.json();
@@ -92,4 +92,4 @@ async function buscarVersiculo() {
       document.getElementById("verse").innerText = "Não foi possível carregar um versículo.";
   }
 }
-document.addEventListener("DOMContentLoaded", buscarVersiculo);
+document.addEventListener("DOMContentLoaded", searchVerse);
